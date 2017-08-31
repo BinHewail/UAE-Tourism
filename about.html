@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content="UAE Tourism, Visit UAE"/>
+        <meta name="description" content="This website is about tourism in UAE"/>
+        <title>UAE Tourism</title>
+    </head>
+    <body>
+        <!-- This section is for the head -->
+        <div id="head">
+            <a href="index.html">
+                <img src="images/uae.jpg" width="525" height="252" 
+                alt="Burj Alarab in Dubai"/>
+            </a>
+        </div>
+
+        <!-- This section is for the navigation -->
+        <div id="nav">
+            <hr/>
+            <a href="index.html">Home</a> | 
+            <a href="tourism.html">Tourism</a> |
+            <a href="about.html">About</a>
+            <hr/>
+        </div>
+
+        <!-- This is for content -->
+        <div id="content">
+            <h1>Tourism @ UAE</h1>
+            <p>We are a specialized company in providing tourism visits to many wonderful
+                 places and sites in UAE. We also specialize in desert safari in Alkhatam 
+                 and beyond.
+            </p>
+
+            <p>If you are interested, please fill in the following form for us:</p>
+
+            <form method="GET" action="about.html">
+                <div>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" />
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" />
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+
+                <!-- checkboxes for the emirates to visit -->
+                <div>
+                    <p>Which Emirates you would like to visit?</p>
+                    <input type="checkbox" name="etv" id="etv1" value="Abu Dhabi" />
+                    <label for="etv1">Abu Dhabi</label>
+                    <br/>
+                    <input type="checkbox" name="etv" id="etv2" value="Dubai" />
+                    <label for="etv2">Dubai</label>
+                </div>
+
+                <!-- list of radios for most dreamed visit -->
+                <div>
+                    <p>What is your most dreamed tourism visit in UAE?</p>
+                    <input type="radio" name="dv" id="dv1" value="desert" />
+                    <label for="dv1">Desert Safari</label>
+                    <br/>
+                    <input type="radio" name="dv" id="dv2" value="malls" />
+                    <label for="dv2">Yas and Dubai Malls</label>
+                    <br/>
+                    <input type="radio" name="dv" id="dv3" value="sea adventures" />
+                    <label for="dv3">Sea Adventures</label>
+                </div>
+
+                <!-- list box for airport to arrive from? -->
+                <div>
+                    <p>Which airport you are arriving from?</p>
+                    <select size="3" name="airport" id="airport">
+                        <option value="AUH">Abu Dhabi</option>
+                        <option value="DXB">Dubai</option>
+                        <option value="SHJ">Sharjah</option>
+                    </select>
+                </div>
+
+                <br/>
+
+                <!-- text area for comments -->
+                <div>
+                    <label for="comment">Comment:</label><br/>
+                    <textarea name="comment" id="comment" rows="5" cols="50">Comment Here</textarea>
+                </div>
+                <br/>
+                <div>
+                    <input type="submit" name="submit" id="submit" value="Submit" />
+                    <input type="reset" name="reset" id="reset" value="Reset" />
+                </div>
+            </form>
+
+        </div><!-- end of content div -->
+
+        <!-- This is for the footer -->
+        <div id="footer">
+            <hr/>
+            &copy; All Rights Reserved | By SIYAHA.COM
+            <hr/>
+        </div>
+    </body>
+</html>
